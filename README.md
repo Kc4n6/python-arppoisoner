@@ -7,3 +7,10 @@ sağlanmayan uygulamalarda kullanıcı adı, parola gibi önemli bilgilerin bulu
 ele geçirmenize yardımcı olur. !!!!!Windows için henüz aktif değil. Bir sonraki geliştirmede onu da ekleyeceğim. 
 Windows aktif değil neden seçim şansı veriyorsun diyenler olacaktır. Haklılar ama o kısmı yazmasam windows için de geliştirmez-
 dim. Bena dürtü olması için sordum yani :D 
+
+superuser yetkileri ile çalışması gerekmektedir.!!!!!
+
+requirements:
+  getmac
+  binascii
+  struct
