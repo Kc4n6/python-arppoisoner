@@ -29,4 +29,4 @@ def changemac(ag_karti,newmac):
         os.system("sudo ifconfig "+ag_karti+" up")
 
 newmac = getnewmac()
-changemac("eth0",newmac)
+changemac("Network kartınızın adını giriniz...",newmac)
