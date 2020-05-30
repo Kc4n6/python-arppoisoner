@@ -1,4 +1,4 @@
-# python-arppoisoner
+# python-arppoisoner/arppoisoning.py
 
 Bu araç python ile yazılmış, bulunduğunuz ağda aktif olan cihazlardan birinin ip adresini, gateway ip adresini ve ağ kartınızın
 adını verdiğinizde gerekli bilgileri arp tablosundan alır ve ağda sizin için sahte arp paketlerini belirli aralıklar ile gönder-
@@ -10,7 +10,10 @@ dim. Bena dürtü olması için sordum yani :D
 
 superuser yetkileri ile çalışması gerekmektedir.!!!!!
 
-requirements:
+Gerektirdiği kütüphaneler:
   getmac
   binascii
   struct
+  
+# python-arppoisoner/changemac.py
+Bu araç, parametre olarak verilen ag kartının mac adresini, hexadecimal karakterlerden rastgele yeni bir mac adresi oluşturarak değiştirir.
