@@ -14,7 +14,7 @@ def getnewmac():
                     newmac = newmac + "".join(random.sample(krktrs,2))
                 else:
                     newmac = newmac + "".join(random.sample(krktrs,2)) + ":"
-        print(newmac)
+        print("Yeni Mac adresiniz : "+newmac)
         return newmac
 
 
@@ -23,9 +23,7 @@ def changemac(ag_karti,newmac):
         time.sleep(1)
         komut = ['sudo','ifconfig',ag_karti,'hw','ether',newmac]
         cikti = subprocess.Popen(komut, stdout=subprocess.PIPE).communicate()[0]
-        print(cikti)
         time.sleep(1)
-        print(cikti.decode() + "bunlar cikti kardes")
         os.system("sudo ifconfig "+ag_karti+" up")
 
 newmac = getnewmac()
